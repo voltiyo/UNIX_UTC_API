@@ -7,12 +7,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/get/:input",(request,response)=>{
+app.get("/api/:input",(request,response)=>{
     const { input } = request.params;
     let output = format(input)
     response.send(output)
 })
-app.get("/get/", (req,res)=>{
+app.get("/api/", (req,res)=>{
     const currentdate = new Date()
     const output = {
         unix:currentdate.getTime(),
