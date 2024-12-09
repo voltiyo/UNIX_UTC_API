@@ -1,6 +1,7 @@
 {
   "scripts":{
-    "build": "echo 'No build step required ! '" 
+    "build": "echo 'No build step required ! '" ,
+    "start": "node main.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
