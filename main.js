@@ -27,7 +27,7 @@ function format(input){
         date = new Date(parseInt(input))
     }
     if (isNaN(date.getTime())){
-        return {error:"Invalid Date "};
+        return {error:"Invalid Date"};
     }
     
     let output = {
